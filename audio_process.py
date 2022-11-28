@@ -16,7 +16,7 @@ class Audio_Hex:
                 f.write(doc.content)
             return True
         except:
-            print(doc.text)
+           
             return False
 
     def save_audio(self, binary, filename):
