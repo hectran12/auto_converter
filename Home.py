@@ -146,8 +146,6 @@ class Home:
                     
                     seconds = datetime.timedelta(hours=x.tm_hour,minutes=x.tm_min,seconds=x.tm_sec).total_seconds()
 
-                    print(seconds)
-
                     if seconds > 60:
                         print(True)
                         while seconds > 0:
