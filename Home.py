@@ -167,7 +167,7 @@ class Home:
                                 )
                                 seconds -= seconds
                             if obj == False:
-                                print('loi 1')
+                             
                                 self.outMessage(message_error='Đã xảy ra lỗi trong quá trình chuyển đổi âm thanh', error=True)
                             else:
                                 audio_list.append(obj)
@@ -180,7 +180,7 @@ class Home:
                                     )
 
                             if obj == False: 
-                                print('loi 2')
+                           
                                 self.outMessage(message_error='Đã xảy ra lỗi trong quá trình chuyển đổi âm thanh', error=True)
                             audio_list.append(obj)
                     
@@ -196,7 +196,7 @@ class Home:
                         if mili > 0:
                             seconds = mili / 1000
                             if seconds < 60:
-                                print(seconds)
+                              
                                 obj = mv.cv_to_object_audio(
                                             audio_file='./audio_system/nosound.mp3',
                                             start=0,
