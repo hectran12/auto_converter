@@ -74,30 +74,30 @@ class Home:
         outpath = 'out.mp4'
 
         
-        # if self.language == 'vi':
-        #     print('Nhập vào file srt: ', end='')
-        #     srt = input()
-        #     print('Nhập vào file video: ', end='')
-        #     video = input()
-        #     print('Nhập vào đường dẫn xuất video: ')
-        #     outpath = input()
+        if self.language == 'vi':
+            print('Nhập vào file srt: ', end='')
+            srt = input()
+            print('Nhập vào file video: ', end='')
+            video = input()
+            print('Nhập vào đường dẫn xuất video: ')
+            outpath = input()
           
-        # else:
-        #     print(
-        #             self.trans.translate('Nhập vào file srt: ', src='vi', dest=self.language).text,
-        #             end = ''
-        #         )
-        #     srt = input()
-        #     print(
-        #             self.trans.translate('Nhập vào file video: ', src='vi', dest=self.language).text,
-        #             end = ''
-        #         )
-        #     video = input()
-        #     print(
-        #             self.trans.translate('Nhập vào đường dẫn xuất video: ', src='vi', dest=self.language).text,
-        #             end = ''
-        #         )
-        #     outpath = input()
+        else:
+            print(
+                    self.trans.translate('Nhập vào file srt: ', src='vi', dest=self.language).text,
+                    end = ''
+                )
+            srt = input()
+            print(
+                    self.trans.translate('Nhập vào file video: ', src='vi', dest=self.language).text,
+                    end = ''
+                )
+            video = input()
+            print(
+                    self.trans.translate('Nhập vào đường dẫn xuất video: ', src='vi', dest=self.language).text,
+                    end = ''
+                )
+            outpath = input()
         
         # export srt
         exp = export.export()
